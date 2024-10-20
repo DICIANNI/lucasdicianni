@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Metadatos importantes -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Favicon -->
+    <link rel="icon" href="C:\Users\lucas\Desktop\lucas_di_cianni1trabajohtml\imagenes\lucas di cianni.png" type="lucas">
+    <!-- Título de la página -->
+    <title>Presupuesto</title>
+    <!-- Estilos internos -->
+    <style>
+        /* Estilos básicos para el cuerpo */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        /* Estilos para el menú principal */
+        .main {
+            display: flex;
+            justify-content: center; /* Centra el contenido horizontalmente */
+            width: 100%; /* El contenedor ocupa todo el ancho de la página */
+            margin: 0 auto;
+            flex-wrap: wrap; /* Permite que el menú se ajuste en pantallas más pequeñas */
+        }
+
+        /* Estilos para la lista de navegación */
+        .main ul {
+            list-style-type: none; /* Elimina los puntos de la lista */
+            padding: 0;
+            display: flex; /* Alinea los elementos del menú en una sola línea */
+            margin: 0;
+            flex-wrap: wrap; /* Ajusta el menú en dispositivos pequeños */
+        }
+
+        .main ul li {
+            margin-right: 100px; /* Espacio entre elementos del menú */
+            font-size: 50px;
+        }
+
+        .main ul li:last-child {
+            margin-right: 0; /* El último elemento no necesita margen a la derecha */
+        }
+
+        .main ul li a {
+            text-decoration: none; /* Sin subrayado en los enlaces */
+            color: #000; /* Color de los enlaces */
+            font-size: 18px;
+        }
+
+        .main ul li a:hover {
+            color: #007BFF; /* Cambia el color del enlace al pasar el ratón */
+        }
+
+        /* Estilos para el contenedor del formulario */
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        /* Título del formulario */
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        /* Estructura básica del formulario */
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Estilos para etiquetas de campos */
+        label {
+            margin-top: 10px;
+            font-weight: bold;
+        }
+
+        /* Estilos para los campos de texto, email y teléfono */
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        /* Estilo para el campo de texto largo */
+        textarea {
+            resize: vertical; /* Permite cambiar el tamaño verticalmente */
+            height: 100px;
+        }
+
+        /* Estilos para el botón de enviar */
+        button {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #28a745;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        /* Efecto hover en el botón */
+        button:hover {
+            background-color: #218838;
+        }
+
+        /* Estilo para marcar los campos requeridos */
+        .required {
+            color: red;
+        }
+
+        /* Estilos para la casilla de verificación */
+        .checkbox-container {
+            margin-top: 10px;
+        }
+
+        .checkbox-container label {
+            font-weight: normal;
+        }
+
+        .checkbox-container input {
+            margin-right: 5px;
+        }
+
+        /* Estilos para el pie de página */
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        footer img {
+            width: 80px;
+        }
+
+        /* MEDIA QUERIES - Ajustes para pantallas pequeñas */
+        @media (max-width: 768px) {
+            .main ul li {
+                font-size: 20px; /* Reduce el tamaño del texto en el menú */
+                margin-right: 20px; /* Reduce el espacio entre los elementos del menú */
+            }
+
+            .container {
+                max-width: 90%; /* Ajusta el ancho del contenedor en pantallas pequeñas */
+                margin: 20px auto; /* Reduce el margen superior e inferior */
+                padding: 10px; /* Reduce el padding en pantallas pequeñas */
+            }
+
+            h1 {
+                font-size: 24px; /* Ajusta el tamaño del título */
+            }
+
+            form input, textarea {
+                font-size: 14px; /* Reduce el tamaño de los campos de entrada */
+            }
+
+            button {
+                font-size: 14px; /* Reduce el tamaño del botón */
+                padding: 8px; /* Ajusta el padding del botón */
+            }
+        }
+
+        /* Media Query para pantallas muy pequeñas (moviles) */
+        @media (max-width: 480px) {
+            .main ul li {
+                font-size: 18px; /* Tamaño más pequeño para menú */
+                margin-right: 10px; /* Reduce más el espacio entre elementos */
+            }
+
+            .container {
+                padding: 5px; /* Reduce el padding para móviles */
+            }
+
+            h1 {
+                font-size: 20px; /* Tamaño más pequeño para el título */
+            }
+
+            form input, textarea {
+                font-size: 12px; /* Tamaño más pequeño para campos de texto */
+            }
+
+            button {
+                font-size: 12px; /* Reduce aún más el tamaño del botón */
+                padding: 6px; /* Ajusta el padding */
+            }
+
+            footer img {
+                width: 60px; /* Ajusta el tamaño de las imágenes de redes sociales */
+            }
+
+            footer p {
+                font-size: 12px; /* Texto más pequeño en el pie de página */
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Logo con enlace a la página de inicio -->
+    <a href="index.html"><img src="C:\Users\lucas\Desktop\lucas_di_cianni1trabajohtml\imagenes\lucas di cianni.png" alt="logo"></a>
+
+    <!-- Menú de navegación principal -->
+    <div class="main">
+        <ul>
+            <li><a href="index.html">INICIO</a></li>
+            <li><a href="productos.html">PRODUCTOS</a></li>
+            <li><a href="presupuesto.html">PRESUPUESTO</a></li>
+            <li><a href="contacto.html">CONTACTO</a></li>
+        </ul>
+    </div>
+
+    <!-- Contenedor del formulario de presupuesto -->
+    <div class="container">
+        <h1>Solicitud de Presupuesto</h1>
+        <form action="#" method="POST">
+            <!-- Campo de Nombre -->
+            <label for="name">Nombre <span class="required">*</span></label>
+            <input type="text" id="name" name="name" placeholder="Escribe tu nombre completo" required minlength="3">
+
+            <!-- Campo de Email -->
+            <label for="email">Email <span class="required">*</span></label>
+            <input type="email" id="email" name="email" placeholder="Escribe tu email" required>
+
+            <!-- Campo de Teléfono -->
+            <label for="phone">Teléfono <span class="required">*</span></label>
+            <input type="tel" id="phone" name="phone" placeholder="Escribe tu número de teléfono" required pattern="[0-9]{9,12}" title="Debe ser un número de teléfono válido de 9 a 12 dígitos.">
+
+            <!-- Campo de Texto Multilínea para Solicitud de Presupuesto -->
+            <label for="message">Solicite más información <span class="required">*</span></label>
+            <textarea id="message" name="message" placeholder="Escribe los detalles de tu solicitud" required></textarea>
+
+            <!-- Casilla de aceptación de Política de Privacidad -->
+            <div class="checkbox-container">
+                <input type="checkbox" id="privacy" name="privacy" required>
+                <label for="privacy">He leído y acepto la <a href="politica-privacidad.html" target="_blank">Política de Privacidad</a> <span class="required">*</span></label>
+            </div>
+
+            <!-- Botón de Enviar Formulario -->
+            <button type="submit">Enviar Solicitud</button>
+        </form>
+    </div>
+
+    <!-- Pie de página con información de contacto y enlaces a redes sociales -->
+    <footer>
+        <a href="https://www.facebook.com/profile.php?id=100008281244751"><img src="C:\Users\lucas\Desktop\lucas_di_cianni1trabajohtml\imagenes\facebook-removebg-preview.png" alt="Facebook"></a>
+        <a href="https://www.instagram.com/lucasdicianni.ok/"><img src="C:\Users\lucas\Desktop\lucas_di_cianni1trabajohtml\imagenes\instagram-removebg-preview.png" alt="Instagram"></a>
+        <a href="https://www.linkedin.com/in/lucas-di-cianni-901017250/"><img src="C:\Users\lucas\Desktop\lucas_di_cianni1trabajohtml\imagenes\linkd-removebg-preview.png" alt="LinkedIn"></a>
+        <a href="https://wa.me/644853829"><img src="C:\Users\lucas\Desktop\lucas_di_cianni1trabajohtml\imagenes\whs-removebg-preview.png" alt="WhatsApp"></a>
+        
+        <p>Dirección: Carrer de l'Aprestadora, 15, 08902 L'Hospitalet de Llobregat, Barcelona</p>
+        <p>Teléfono: +34 644 853 829</p>
+        <p>Email: lucasdicianni92@gmail.com</p>
+        <p>&copy; 2024 Lucas Di Cianni. Todos los derechos reservados.</p>
+        <a href="aviso_legal.html">AVISO LEGAL</a>
+    </footer>
+</body>
+</html>

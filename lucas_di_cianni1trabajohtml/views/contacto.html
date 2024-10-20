@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Metadatos y configuración básica de la página -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Favicon de la página -->
+    <link rel="icon" href="C:\Users\lucas\Desktop\lucas_di_cianni1trabajohtml\imagenes\lucas di cianni.png" type="lucas">
+    
+    <!-- Título de la página -->
+    <title>Contacto</title>
+    
+    <!-- Estilos CSS para el diseño de la página -->
+    <style>
+        /* Estilo general para el cuerpo de la página */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        /* Estilos para el menú de navegación principal */
+        .main {
+            display: flex;
+            justify-content: center; /* Centra el menú horizontalmente */
+            width: 100%; /* Ocupar el ancho total */
+            margin: 0 auto; /* Centrar el contenedor */
+        }
+
+        .main ul {
+            list-style-type: none; /* Eliminar viñetas */
+            padding: 0;
+            display: flex; /* Menú en línea */
+            margin: 0;
+        }
+
+        .main ul li {
+            margin-right: 50px; /* Espacio entre enlaces del menú */
+            font-size: 18px;
+        }
+
+        .main ul li:last-child {
+            margin-right: 0; /* Elimina el margen en el último elemento */
+        }
+
+        .main ul li a {
+            text-decoration: none; /* Quitar subrayado */
+            color: #000; /* Color del texto */
+            font-size: 18px;
+        }
+
+        .main ul li a:hover {
+            color: #007BFF; /* Cambia el color al pasar el ratón */
+        }
+
+        /* Estilos para el contenedor principal */
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        /* Estilo para el título principal */
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        /* Estilos para la sección del mapa */
+        .map {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .map img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Estilos para los detalles de contacto */
+        .contact-details {
+            margin-top: 30px;
+        }
+
+        .contact-details h2 {
+            color: #2c3e50;
+        }
+
+        .contact-details p {
+            font-size: 16px;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .contact-details strong {
+            font-weight: bold;
+        }
+
+        .contact-details a {
+            color: #2980b9;
+            text-decoration: none;
+        }
+
+        .contact-details a:hover {
+            text-decoration: underline;
+        }
+
+        /* Estilos para el pie de página */
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        footer img {
+            width: 50px;
+            margin: 0 10px; /* Espacio entre los iconos */
+        }
+
+        /* === Estilos Responsivos === */
+        /* Para pantallas de tamaño medio (tablets) */
+        @media screen and (max-width: 768px) {
+            .main ul {
+                flex-direction: column; /* Menú vertical en lugar de horizontal */
+                align-items: center;
+            }
+
+            .main ul li {
+                margin-right: 0;
+                margin-bottom: 15px; /* Espacio entre enlaces en pantallas pequeñas */
+            }
+
+            .container {
+                margin: 20px;
+                padding: 15px; /* Reduce el padding en pantallas medianas */
+            }
+
+            .contact-details p {
+                font-size: 15px; /* Reduce el tamaño del texto */
+            }
+        }
+
+        /* Para pantallas pequeñas (móviles) */
+        @media screen and (max-width: 480px) {
+            .main ul li {
+                font-size: 16px; /* Tamaño de fuente más pequeño en móviles */
+            }
+
+            .container {
+                margin: 10px;
+                padding: 10px; /* Menor padding en pantallas pequeñas */
+            }
+
+            h1 {
+                font-size: 24px; /* Tamaño del título principal reducido */
+            }
+
+            .contact-details p {
+                font-size: 14px; /* Texto más pequeño para móviles */
+            }
+
+            footer img {
+                width: 40px; /* Iconos más pequeños */
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Logo con enlace a la página de inicio -->
+    <a href="index.html"><img src="C:\Users\lucas\Desktop\lucas_di_cianni1trabajohtml\imagenes\lucas di cianni.png" alt="logo"></a>
+
+    <!-- Menú de navegación principal -->
+    <div class="main">
+        <ul>
+            <li><a href="index.html">INICIO</a></li>
+            <li><a href="productos.html">PRODUCTOS</a></li>
+            <li><a href="presupuesto.html">PRESUPUESTO</a></li>
+            <li><a href="contacto.html">CONTACTO</a></li>
+        </ul>
+    </div>
+
+    <!-- Contenedor principal para la página de contacto -->
+    <div class="container">
+        <h1>Contáctanos</h1>
+
+        <!-- Sección de mapa de ubicación de la empresa -->
+        <div class="map">
+            <h2>Nuestra Ubicación</h2>
+            <img src="C:\Users\lucas\Desktop\lucas_di_cianni1trabajohtml\imagenes\Barcelona-city-street-map.jpg" alt="Mapa de la ubicación de la empresa">
+        </div>
+
+        <!-- Detalles de contacto de la empresa -->
+        <div class="contact-details">
+            <h2>Datos de la Empresa</h2>
+            <p><strong>Nombre de la Empresa:</strong> Lucas Di Cianni S.L</p>
+            <p><strong>Dirección:</strong> Carrer de l'Aprestadora, 15, 08902 L'Hospitalet de Llobregat, Barcelona</p>
+            <p><strong>Teléfono:</strong> <a href="tel:+34644853829">+34 644 853 829</a></p>
+            <p><strong>Email:</strong> <a href="mailto:lucasdicianni92@gmail.com">lucasdicianni92@gmail.com</a></p>
+            <p><strong>Horario de Atención:</strong> Lunes a Viernes, de 9:00 a 18:00</p>
+        </div>
+    </div>
+
+    <!-- Pie de página con enlaces a redes sociales -->
+    <footer>
+        <a href="https://www.facebook.com/profile.php?id=100008281244751">
+            <img src="C:\Users\lucas\Desktop\lucas_di_cianni1trabajohtml\imagenes\facebook-removebg-preview.png" alt="Facebook"></a>
+        <a href="https://www.instagram.com/lucasdicianni.ok/">
+            <img src="C:\Users\lucas\Desktop\lucas_di_cianni1trabajohtml\imagenes\instagram-removebg-preview.png" alt="Instagram"></a>
+        <a href="https://www.linkedin.com/in/lucas-di-cianni-901017250/">
+            <img src="C:\Users\lucas\Desktop\lucas_di_cianni1trabajohtml\imagenes\linkd-removebg-preview.png" alt="LinkedIn"></a>
+        <a href="https://wa.me/644853829">
+            <img src="C:\Users\lucas\Desktop\lucas_di_cianni1trabajohtml\imagenes\whs-removebg-preview.png" alt="WhatsApp"></a>
+
+        <!-- Información adicional en el pie de página -->
+        <p>Dirección: Carrer de l'Aprestadora, 15, 08902 L'Hospitalet de Llobregat, Barcelona</p>
+        <p>Teléfono: +34 644 853 829</p>
+        <p>Email: lucasdicianni92@gmail.com</p>
+        <p>&copy; 2024 Lucas Di Cianni. Todos los derechos reservados.</p>
+        <a href="aviso_legal.html">AVISO LEGAL</a>
+    </footer>
+</body>
+</html>

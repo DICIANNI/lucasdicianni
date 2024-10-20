@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Metadatos esenciales -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <!-- Favicon del sitio -->
+    <link rel="icon" href="C:\Users\lucas\Desktop\lucas_di_cianni1trabajohtml\imagenes\lucas di cianni.png" type="lucas">
+    
+    <!-- Título de la página -->
+    <title>Aviso Legal</title>
+    
+    <!-- Estilos para la página -->
+    <style>
+        /* Estilo general del cuerpo */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Estilos para el menú de navegación */
+        .main {
+            display: flex;
+            justify-content: center; /* Centra el menú */
+            width: 100%; /* Abarca todo el ancho de la página */
+            margin: 0 auto;
+            background-color: #fff;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra del menú */
+            padding: 10px 0;
+        }
+
+        .main ul {
+            list-style-type: none; /* Eliminar viñetas */
+            padding: 0;
+            display: flex; /* Elementos en línea */
+            margin: 0;
+        }
+
+        .main ul li {
+            margin-right: 50px; /* Espaciado entre elementos del menú */
+            font-size: 18px;
+        }
+
+        .main ul li:last-child {
+            margin-right: 0; /* Elimina margen en el último elemento */
+        }
+
+        .main ul li a {
+            text-decoration: none; /* Sin subrayado en los enlaces */
+            color: #000; /* Color de los enlaces */
+        }
+
+        .main ul li a:hover {
+            color: #007BFF; /* Color al pasar el ratón */
+        }
+
+        /* Estilos para el contenedor principal */
+        .container {
+            max-width: 1000px; /* Ancho máximo del contenedor */
+            margin: 20px auto; /* Centra el contenedor */
+            padding: 20px;
+            background-color: #fff; /* Fondo blanco */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra */
+        }
+
+        /* Estilos para los encabezados */
+        h1, h2 {
+            color: #444;
+            margin-bottom: 15px;
+        }
+
+        /* Estilos para los párrafos */
+        p {
+            margin-bottom: 15px;
+        }
+
+        /* Estilos para los enlaces */
+        a {
+            color: #0066cc; /* Color de los enlaces */
+            text-decoration: none; /* Sin subrayado */
+        }
+
+        a:hover {
+            text-decoration: underline; /* Subrayado al pasar el ratón */
+        }
+
+        /* === Estilos Responsivos === */
+        /* Estilos para pantallas pequeñas (móviles) */
+        @media screen and (max-width: 768px) {
+            .main ul {
+                flex-direction: column; /* Apila los elementos del menú verticalmente */
+            }
+
+            .main ul li {
+                margin-right: 0; /* Elimina el margen a la derecha */
+                margin-bottom: 10px; /* Espacio inferior entre los elementos */
+                font-size: 16px; /* Tamaño de texto más pequeño */
+            }
+
+            .container {
+                padding: 15px; /* Reduce el padding del contenedor */
+                margin: 10px; /* Reduce el margen en pantallas pequeñas */
+            }
+        }
+
+        /* Estilos para pantallas muy pequeñas (menos de 480px) */
+        @media screen and (max-width: 480px) {
+            .main ul li {
+                font-size: 14px; /* Reduce aún más el tamaño del texto en el menú */
+            }
+
+            h1 {
+                font-size: 24px; /* Reduce el tamaño del encabezado principal */
+            }
+
+            h2 {
+                font-size: 18px; /* Reduce el tamaño de los subencabezados */
+            }
+
+            .container {
+                padding: 10px; /* Menor padding en pantallas muy pequeñas */
+                margin: 5px; /* Menor margen */
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Menú de navegación principal -->
+    <div class="main">
+        <ul>
+            <li><a href="index.html">INICIO</a></li>
+            <li><a href="productos.html">PRODUCTOS</a></li>
+            <li><a href="presupuesto.html">PRESUPUESTO</a></li>
+            <li><a href="contacto.html">CONTACTO</a></li>
+        </ul>
+    </div>
+
+    <!-- Contenedor del aviso legal -->
+    <div class="container">
+        <h1>Aviso Legal</h1>
+
+        <!-- Cumplimiento con la ley de servicios electrónicos -->
+        <p>
+            En cumplimiento con lo establecido por la Ley de Servicios de la Sociedad de la Información y del Comercio Electrónico (LSSI), se informa a los usuarios de esta página web los siguientes datos:
+        </p>
+
+        <!-- Datos del titular de la empresa -->
+        <h2>1. Datos del Titular</h2>
+        <p>
+            Nombre de la empresa: <strong>Lucas Di Cianni S.L.</strong><br>
+            CIF: 1564856281<br>
+            Dirección: Carrer de l'Aprestadora, 15, 08902 L'Hospitalet de Llobregat, Barcelona, España<br>
+            Correo electrónico: <a href="presupuesto.html">lucasdicianni92@gmail.com</a><br>
+            Teléfono: +34 644 853 829
+        </p>
+
+        <!-- Objeto del aviso legal -->
+        <h2>2. Objeto</h2>
+        <p>
+            El presente aviso legal regula el uso del sitio web <strong><a href="index.html">www.lucasdicianni.com</a></strong>, que pone a disposición de los usuarios con el fin de proporcionar información sobre los servicios y productos ofrecidos por la empresa.
+        </p>
+
+        <!-- Condiciones de uso del sitio web -->
+        <h2>3. Uso del Sitio Web</h2>
+        <p>
+            El acceso y uso del sitio web confiere la condición de usuario, lo que implica la aceptación plena y sin reservas de todas las disposiciones incluidas en este Aviso Legal en el momento en que el usuario acceda al sitio web. 
+        </p>
+
+        <!-- Cumplimiento de protección de datos -->
+        <h2>4. Protección de Datos</h2>
+        <p>
+            La empresa cumple con la normativa vigente en materia de protección de datos personales, en particular con el Reglamento (UE) 2016/679 (Reglamento General de Protección de Datos - RGPD) y la Ley Orgánica 3/2018, de Protección de Datos Personales y garantía de los derechos digitales (LOPDGDD). 
+        </p>
+
+        <!-- Derechos de propiedad intelectual -->
+        <h2>5. Propiedad Intelectual e Industrial</h2>
+        <p>
+            Todos los contenidos del sitio web (textos, imágenes, gráficos, diseños, código fuente, etc.) son propiedad exclusiva de <strong>Lucas Di Cianni S.L.</strong> o de sus licenciantes, y están protegidos por la legislación sobre propiedad intelectual e industrial. Queda prohibida la reproducción, distribución o transformación de los contenidos sin el consentimiento expreso del titular.
+        </p>
+
+        <!-- Exclusión de responsabilidad por el uso del sitio web -->
+        <h2>6. Responsabilidad</h2>
+        <p>
+            El titular del sitio web no se responsabiliza del mal uso que se realice de los contenidos de la web, siendo responsabilidad exclusiva del usuario el acceso o uso incorrecto de los mismos. Asimismo, no se garantiza la ausencia de virus o cualquier otro elemento que pudiera causar daños o alteraciones en el sistema informático del usuario.
+        </p>
+
+        <!-- Ley aplicable y jurisdicción -->
+        <h2>7. Legislación Aplicable y Jurisdicción</h2>
+        <p>
+            El presente Aviso Legal se rige por la legislación española. Para la resolución de cualquier controversia que pudiera surgir en relación con este sitio web, las partes se someten a los tribunales de la ciudad de Barcelona.
+        </p>
+
+        <!-- Fecha de la última actualización -->
+        <p>
+            Última actualización: 15/10/2024.
+        </p>
+    </div>
+</body>
+</html>

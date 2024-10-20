@@ -1,0 +1,117 @@
+/* Centramos el texto en toda la página */
+body {
+    text-align: center; /* Centrado de texto */
+    font-family: Arial, sans-serif;
+}
+
+/* Estilo principal para el menú de navegación */
+.main {
+    display: flex; /* Establece un diseño flexbox para organizar los elementos en línea */
+    justify-content: center; /* Centra el contenido horizontalmente */
+    width: 100%; /* Asegura que el contenedor ocupe todo el ancho de la página */
+    margin: 0 auto; /* Centra el contenedor en la página */
+}
+
+/* Estilos para la lista de navegación */
+.main ul {
+    list-style-type: none; /* Elimina los puntos de la lista por defecto */
+    padding: 0; /* Elimina el espacio interno en los elementos de la lista */
+    display: flex; /* Hace que los elementos de la lista se dispongan en una sola fila */
+    margin: 0; /* Elimina márgenes por defecto */
+}
+
+/* Estilos para los elementos de la lista del menú */
+.main ul li {
+    margin-right: 100px; /* Añade espacio entre los elementos del menú */
+    font-size: 50px; /* Define el tamaño de la fuente */
+}
+
+/* Elimina el margen derecho del último elemento del menú */
+.main ul li:last-child {
+    margin-right: 0;
+}
+
+/* Estilo para los enlaces en el menú */
+.main ul li a {
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+    color: #000; /* Color de los enlaces */
+    font-size: 18px; /* Ajusta el tamaño de la fuente en los enlaces */
+}
+
+/* Cambia el color del enlace cuando se pasa el cursor sobre él */
+.main ul li a:hover {
+    color: #007BFF; /* Cambia el color al pasar el mouse */
+}
+
+/* Estilos para el contenido principal */
+.content {
+    width: 100%; /* El contenido ocupará todo el ancho de la ventana */
+}
+
+/* Estilos para las imágenes dentro del contenedor "content" */
+.content img {
+    width: 100%; /* La imagen ocupará todo el ancho del contenedor */
+    height: auto; /* Mantiene la proporción de la imagen al redimensionarla */
+    display: block; /* Elimina los pequeños espacios verticales causados por imágenes */
+    border-radius: 15px; /* Redondea las esquinas de la imagen */
+}
+
+/* Estilos para el pie de página */
+footer {
+    background-color: #333; /* Cambia el fondo del pie de página a color oscuro */
+    color: #fff; /* Cambia el color del texto a blanco */
+    padding: 20px; /* Añade espacio interno alrededor del contenido del pie de página */
+    text-align: center; /* Centra el texto en el pie de página */
+}
+
+/* Estilo para las imágenes dentro del pie de página */
+footer img {
+    width: 80px; /* Define el tamaño de las imágenes en el pie de página */
+}
+
+/* === Estilos Responsivos === */
+
+/* Estilos para pantallas de tamaño medio (tablets) */
+@media screen and (max-width: 768px) {
+    .main ul {
+        flex-direction: column; /* Apila los elementos del menú verticalmente */
+    }
+
+    .main ul li {
+        font-size: 30px; /* Reduce el tamaño de los elementos del menú */
+        margin-right: 0; /* Elimina el margen entre elementos */
+        margin-bottom: 20px; /* Añade margen inferior entre los elementos */
+    }
+
+    .main ul li a {
+        font-size: 16px; /* Reduce el tamaño de la fuente de los enlaces */
+    }
+
+    .content img {
+        width: 100%; /* Asegura que las imágenes sigan siendo 100% del contenedor */
+    }
+    
+    footer img {
+        width: 60px; /* Reduce el tamaño de las imágenes en el pie de página */
+    }
+}
+
+/* Estilos para pantallas pequeñas (móviles) */
+@media screen and (max-width: 480px) {
+    .main ul li {
+        font-size: 24px; /* Reduce aún más el tamaño de los elementos del menú */
+        margin-bottom: 15px; /* Reduce el margen inferior */
+    }
+
+    .main ul li a {
+        font-size: 14px; /* Reduce el tamaño de la fuente de los enlaces */
+    }
+
+    footer img {
+        width: 50px; /* Ajusta el tamaño de las imágenes en el pie de página */
+    }
+
+    footer {
+        padding: 15px; /* Reduce el padding del pie de página en pantallas pequeñas */
+    }
+}
